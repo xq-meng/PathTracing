@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lightpanel</class>
+ <widget class="QDialog" name="lightpanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>LIght Source</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lgt_ps">
+        <property name="text">
+         <string>Light Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lgt_rd">
+        <property name="text">
+         <string>Light Radius</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QLineEdit" name="lgt_rd_r"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lgt_ps_y"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lgt_em_x"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="lgt_em_z"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="lgt_em_y"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lgt_ps_x"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lgt_em">
+        <property name="text">
+         <string>Light Emission</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLineEdit" name="lgt_ps_z"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Add Light</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

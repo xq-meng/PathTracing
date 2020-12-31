@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>settingpanel</class>
+ <widget class="QDialog" name="settingpanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Add More Lights</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Path Tracing Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="2" column="0">
+       <widget class="QLabel" name="pt_dp">
+        <property name="text">
+         <string>Maximum Tracing Depth</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="pt_aml_y"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="pt_aml_x"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="pt_aml">
+        <property name="text">
+         <string>Ambient LIght</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="pt_nr_pix">
+        <property name="text">
+         <string>Sample Rays in each Pixel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="pt_nr_lgt">
+        <property name="text">
+         <string>Sample Rays in each Light</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="pt_aml_z"/>
+      </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QLineEdit" name="pt_nr_pix_n"/>
+      </item>
+      <item row="1" column="1" colspan="3">
+       <widget class="QLineEdit" name="pt_nr_lgt_n"/>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QLineEdit" name="pt_dp_n"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Camera Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="4" column="0">
+       <widget class="QLabel" name="cma_ps">
+        <property name="text">
+         <string>Camera Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="cma_la_z"/>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QLineEdit" name="cma_fa_l"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="cma_la">
+        <property name="text">
+         <string>Camera Look at</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLineEdit" name="cma_ps_z"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="cma_fa">
+        <property name="text">
+         <string>Camera Fov</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="cma_up_z"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="cma_ps_x"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="cma_up_x"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="cma_la_x"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="cma_la_y"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="cma_up_y"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="cma_ps_y"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="cma_up">
+        <property name="text">
+         <string>Camera Up</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="cma_sz_wd"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="cma_sz_hg"/>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="cma_sz">
+        <property name="text">
+         <string>Camera Size (Height / Width)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Light Source Settings</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="5" column="0">
+       <widget class="QLabel" name="lgt_em">
+        <property name="text">
+         <string>Light Emission</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lgt_ps_y"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="lgt_ps">
+        <property name="text">
+         <string>Light Position</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="lgt_rd">
+        <property name="text">
+         <string>LIght Radius</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lgt_ps_x"/>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLineEdit" name="lgt_ps_z"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lgt_em_x"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="lgt_em_y"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="lgt_em_z"/>
+      </item>
+      <item row="6" column="1" colspan="3">
+       <widget class="QLineEdit" name="lgt_rd_r"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Default Select</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="rb_conel">
+        <property name="text">
+         <string>Cornel Box</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rb_dining">
+        <property name="text">
+         <string>Dining Room</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rb_veach">
+        <property name="text">
+         <string>Veach MIS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rb_custom">
+        <property name="text">
+         <string>Custom</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <zorder>buttonBox</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>groupBox_3</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox_4</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>settingpanel</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>settingpanel</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
